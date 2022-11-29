@@ -22,7 +22,7 @@ The purpose of our website is to provide the most unique experience to our users
 
 ## Usage
 
-Allows users to login/register an account in our database that they can then use to search and or save workouts to in our saved workouts tab. 
+Allows users to login/register for an account in our database. They can then use our API to search for workouts by equipment, target a body part, or even a muscle group. Then the user will be able to save workouts to their account in our saved workouts tab for future use to create a workout routine. 
 
 ## License
 
