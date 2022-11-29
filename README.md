@@ -41,7 +41,7 @@ Apache 2.0 License
 
 ## Questions
  
-https://github.com/tylerzeman
-https://github.com/B-alt-del
-https://github.com/kingSHLERM
-https://github.com/cr7st74n 
+ * https://github.com/tylerzeman
+ * https://github.com/B-alt-del
+ * https://github.com/kingSHLERM
+ * https://github.com/cr7st74n 
