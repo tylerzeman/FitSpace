@@ -30,11 +30,11 @@ Apache 2.0 License
 
 ## Screenshots
 
-[homepage Screenshot](./images/homepage.jpg?raw=true "homepage Screenshot")
+![homepage Screenshot](./images/homepage.jpg?raw=true "homepage Screenshot")
 
-[Login Screenshot](./images/login.jpg?raw=true "login screenshot")
+![Login Screenshot](./images/login.jpg?raw=true "login screenshot")
 
-[Workouts Screenshot](./images/workout.jpg?raw=true "workouts screenshot")
+![Workouts Screenshot](./images/workout.jpg?raw=true "workouts screenshot")
 
 ## Project-Deployment
 [Access here!](https://fitspace-stay-fit-my-friends.herokuapp.com/)
