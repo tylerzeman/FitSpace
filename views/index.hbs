@@ -1,0 +1,91 @@
+ {{#if user}}
+
+  <ul id="slide-out" class="sidenav">
+
+    <div><i>Click Search Method Below</i></div>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">sidenav</i></a>
+
+    <li><a class="waves-effect dropdown-trigger" href="#!" data-target="Equipment">Search by Equipment</a></li>
+      <ul id='Equipment' class='dropdown-content'></ul>
+
+    <li><a class="waves-effect dropdown-trigger" href="#!" data-target="BodyPart">Target Body Part</a></li>
+      <ul id='BodyPart' class='dropdown-content'> </ul>
+
+    <li><a class="waves-effect dropdown-trigger" href="#!" data-target="TargetMuscle">Target Muscle Group</a></li>
+      <ul id='TargetMuscle' class='dropdown-content'></ul>
+
+  </ul>
+
+  <div id="cardContainer" class="row"></div>
+  </div>
+
+        <div class="row col s12" id="Dashboard">
+        <div class="container">
+          <div class="col s12">
+      
+            <div class="row">
+              <div class="col s12 ">
+                <div class="card">
+                  <div class="card-image">
+                    <img height="700px" src="https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925_960_720.jpg">
+                    <span class="card-title">Hello {{user.username}}</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Start your Fitness Journey by searching for a workout in the Exercise search bar above and below!</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="" id="trigger">Search For A
+                        Workout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+  {{else}}
+<div class="appTitle orange lighten-2 white-text">
+  <h1>FitSpace</h1>
+  <h4>Join FitSpace today by registering for an account!</h4>
+</div>
+<div class="carousel carousel-slider center ">
+    <div class="carousel-fixed-item center">
+    </div>
+    <div class="carousel-item blue accent-4 white-text" href="#one!">
+      <h2>All in One workout App</h2>
+      
+      <img src="https://wallpaperaccess.com/full/804834.jpg">
+    </div>
+    <div class="carousel-item blue accent-4 white-text" href="#two!">
+      <h2>Search by Equipment</h2>
+   
+      <img src="https://wallpaperaccess.com/full/1078069.jpg">
+    </div>
+    <div class="carousel-item blue accent-4 white-text" href="#three!">
+      <h2>Target Certain Body Parts</h2>
+   
+      <img src="https://rare-gallery.com/resol/3840x2160/65674-Woman-Brunette-GymGym-4k-Ultra-HD-Wallpaper.jpg">
+    </div>
+  </div>
+  <div class="divider orange lighten-2"></div>
+  <div class="section blue accent-4 white-text center">
+    <h5 >The Best Workouts. For Your Best Results</h5>
+    <p>Get back to exercising and back to your best with FitSpace. Our library of workouts are ready to help you get the best results.</p>
+  </div>
+  <div class="divider orange lighten-2"></div>
+  <div class="section blue accent-4 white-text center">
+    <h5>Save your workouts</h5>
+    <p>Login/Register to save your workouts!</p>
+  </div>
+  <div class="divider orange lighten-2"></div>
+  <div class="section blue accent-4 white-text center">
+    <h5>Discover workouts</h5>
+    <p>Look for workouts by searching by equipment and targeting certain muscle groups</p>
+  </div>
+  </div>
+  <div class="divider orange lighten-2"></div>
+  
+
+  {{/if}}

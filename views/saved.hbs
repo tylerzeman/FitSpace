@@ -1,0 +1,27 @@
+<body class="orange lighten-2">
+<h1 class="center orange lighten-2 white-text">SAVED WORKOUTS</h1>
+<main class="savedWorkouts center">
+  <div id="cardContainer" class="row"></div>
+
+    {{#each user.saved as |workout| }} 
+
+        <div class="savedCard ">
+                <div id="ExerciseCard" class="card">
+                    <div class= "card-content">
+                        <h5>{{workout.name}} </h5>
+                    </div>
+                    <div class="card-image">
+                        <img src={{workout.gifUrl}}>
+                    </div>
+                    <div id="savedCardContent"class="card-content">
+                        <p>BodyPart: {{workout.bodyPart}} </p>
+                        <p>Equipment: {{workout.equipment}} </p>
+                    </div>
+                </div>
+            </div>
+
+    {{/each}}
+
+  </div>
+</main>
+</body>

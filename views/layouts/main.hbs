@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITSPACE</title>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-gym-fitness-and-gym-xnimrodx-lineal-color-xnimrodx-4.png">
+</head>
+
+<body>
+  <header>
+        {{#if user}}
+
+      
+        <nav class="nav-extended">
+           <div class="nav-wrapper blue accent-4 ">
+          <div class="container">
+            <a href="/" class="brand-logo"><i class="material-icons">directions_run</i>FitSpace</a>
+            <a href="" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="#page-footer"><i>About us</i></a></li>
+                  <li><a href="#page-footer"><i>References</i></a></li>
+                  <li><a href="#"><i><span class="email">{{user.email}}</span></i></a></li>
+                  <li><a class="waves-effect waves-light orange lighten-2 btn blue-text text-darken-2" href="/auth/logout"><i class="material-icons right"></i>Log Out</a></li>
+                </ul>
+          </div>
+           </div>
+               <div class="nav-content orange lighten-2 ">
+                <ul class="tabs tabs-transparent ">
+                  <li class="tab"><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons blue-text text-darken-2" id="trigger">accessibility</i>EXERCISE</a> </li>
+                  <li class="tab"><a class="active blue-text text-darken-2" href="/" target="_self">Dashboard</a></li>
+                  <li class="tab"><a class="blue-text text-darken-2" href="/saved" target="_self">Saved Workouts</a></li>
+                </ul>
+              </div>
+          </nav>
+
+          <ul class="sidenav right" id="mobile-demo">
+            <li><a href="#page-footer"><i>Information</i></a></li>
+            <li><a href="#page-footer"><i>Support</i></a></li>
+            <li><a href="#"><span class="email">{{user.email}}</span></a></li>
+            <li><a class="waves-effect waves-light orange lighten-2 btn blue-text text-darken-2" href="/auth/logout"><i class="material-icons right"></i>Log Out</a></li>
+          </ul>
+
+
+
+
+        {{else}}
+        <nav>
+           <div class="nav-wrapper blue accent-4">
+            <a href="#!" class="brand-logo"><i class="material-icons">directions_run</i>FitSpace</a>
+            <a href="/" class="brand-logo"><i class="material-icons">directions_run</i>FitSpace</a>
+              <div class="right"> 
+                <a class="waves-effect waves-light orange lighten-2 btn blue-text text-darken-2 hoverable" href="/login">Log In</a>
+                <span>or</span>
+                <a class="waves-effect waves-light orange lighten-2 btn blue-text text-darken-2 hoverable" href="/register">Join Now</a>
+              </div>
+           </div></nav>
+      {{/if}}
+  </header>
+
+  <main>
+    {{{body}}}
+  </main>
+
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/browser.js"></script>
+
+</body>
+<footer id="page-footer" class="page-footer col s12 blue accent-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">About us</h5>
+        <p class="grey-text text-lighten-4">We are a team of learning developers in the UofM full stack development coding course.</p>
+      </div>
+        <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contact us</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://github.com/tylerzeman"  target="_blank">Tyler's GitHub</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://github.com/B-alt-del"  target="_blank">Brad's GitHub</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://github.com/cr7st74n"  target="_blank">Cristian's GitHub</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://github.com/kingSHLERM"  target="_blank">Connor's GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer> 
+</body>
+</html>
